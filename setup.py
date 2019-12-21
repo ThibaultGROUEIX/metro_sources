@@ -12,7 +12,7 @@ def main():
     parser.add_argument("--clean", action="store_true")
     args = parser.parse_args()
     cur_dir = dirname(realpath(__file__))
-    build_dir = join(cur_dir, "auxiliary", "metro_sources", "build")
+    build_dir = join(cur_dir, "build")
     if args.build:
         if not exists(build_dir):
             makedirs(build_dir)
